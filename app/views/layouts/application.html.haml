@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title BrigadeMvp
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body
+    #header.wrap
+      %a#logo.like-btn{:href => "/"} Code for America
+      #tag-line
+        %h1 THE CFA BRIGADE:
+        %h2 BUILDING THE NEW CIVIC INFRASTUCTURE
+      #social
+        %li
+          %a#rss{:href => "http://codeforamerica.org/feed/"} RSS
+        %li
+          %a#fb{:href => "http://www.facebook.com/codeforamerica"}Facebook
+        %li
+          %a#yt{:href => "http://www.youtube.com/user/CodeforAmerica"}YouTube
+        %li
+          %a#tw{:href => "http://www.twitter.com/codeforamerica"} Twitter
+        %li
+          %a#mail{:href => "mailto:info@codeforamerica.org"}E-mail
+      #nav-wrap
+        %ul#nav.menu
+          %li
+            = link_to 'Home', '#'
+          %li
+            = link_to 'Applications', '#'
+
+    .wrap-t
+      #become-wrap.wrap.clearfix
+        = yield
+
+    #footer
+      .wrap
+
