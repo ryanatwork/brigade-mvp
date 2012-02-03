@@ -9,6 +9,7 @@ group :assets do
 end
 
 gem 'bootstrap-sass-rails'
+gem 'devise'
 gem 'haml-rails'
 gem 'jquery-rails'
 
