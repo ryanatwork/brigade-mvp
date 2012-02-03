@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @app.name
+%p
+  %b Tag line:
+  = @app.tag_line
+%p
+  %b Description:
+  = @app.description
+%p
+  %b Instructions:
+  = @app.instructions
+%p
+  %b Github url:
+  = @app.github_url
+%p
+  %b Demo url:
+  = @app.demo_url
+%p
+  %b Deployments:
+  = @app.deployments
+
+= link_to 'Edit', edit_app_path(@app)
+\|
+= link_to 'Back', apps_path
