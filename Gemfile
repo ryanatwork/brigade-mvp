@@ -8,6 +8,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'bootstrap-sass-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
 
