@@ -22,6 +22,7 @@
   %b Deployments:
   = @app.deployments
 
-= link_to 'Edit', edit_app_path(@app)
-\|
+- if current_user
+  = link_to 'Edit', edit_app_path(@app)
+  \|
 = link_to 'Back', apps_path
