@@ -1,14 +1,9 @@
-%h1 Listing apps
-
-%table
+%h1 Applications
+%br
+%table.table.table-bordered
   %tr
     %th Name
     %th Tag line
-    %th Description
-    %th Instructions
-    %th Github url
-    %th Demo url
-    %th Deployments
     %th
     %th
     %th
@@ -17,11 +12,6 @@
     %tr
       %td= app.name
       %td= app.tag_line
-      %td= app.description
-      %td= app.instructions
-      %td= app.github_url
-      %td= app.demo_url
-      %td= app.deployments
       %td= link_to 'Show', app
       %td= link_to 'Edit', edit_app_path(app)
       %td= link_to 'Destroy', app, :confirm => 'Are you sure?', :method => :delete
