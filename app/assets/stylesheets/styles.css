@@ -4,32 +4,6 @@ developed by Vel
 at http://www.vhg-design.com
 ===============
 */
-html, body{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 62.5%;
-}
-
-#github_ribbon {
-position: absolute;
-top: 0;
-right: 0;
-display: block;
-width: 149px;
-height: 150px;
-background: url(github-ribbon.png) no-repeat;
-text-indent: -999px;
-overflow: hidden;
-z-index: 3;}
-
-body {
-  color: #666;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  text-shadow: none;
-}
-
 a {
   color: #cb2a3c;
 	text-decoration: none;
@@ -39,7 +13,6 @@ a:hover {
   text-decoration: none;
 }
 
-p {line-height: 1.4em; font-size: 14px;}
 
 ul, ol, dl, dt, dd {
   list-style: none;
@@ -47,53 +20,6 @@ ul, ol, dl, dt, dd {
   padding: 0;
 }
 
-div.entry-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0 0 0 25px;}
-
-h1, h2, h3, h4, h5, h6, form, fieldset {
-  margin: 0;
-  padding: 0;
-}
-fieldset {
-  border: none;
-}
-input, select, textarea, button {
-  font: normal 1em Arial, Helvetica, sans-serif;
-  border: none;
-  padding: 0;
-  line-height: 27px;
-  background: #ececec;
-  color: #666666;
-  font-size: 1.00em;
-}
-
-blockquote {
-	border-left: 5px #CCC solid;
-	padding-left: 10px;
-}
-
-img.alignleft  { float: left; height: auto; margin: 5px 15px 5px 0; }
-img.alignright  { float: right; height: auto; margin: 5px 0 5px 15px; }
-img.aligncenter  { text-align: center; margin-bottom:15px;}
-img.aligncenter  { margin-left:auto; margin-right:auto; display:block; }
-
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.clear {
-  clear: both;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-}
 
 .wrap {
   margin: 0 auto;
@@ -114,29 +40,13 @@ img.aligncenter  { margin-left:auto; margin-right:auto; display:block; }
 
 }
 
-#twocols-container {
-  float: right;
-  position: relative;
-  width: 730px;
-}
 .like-btn {
   display: block;
   text-indent: -999em;
   outline: none;
 }
 
-a img, img a {text-decoration: none; border: none;}
 
-
-.user {float: left; margin-right: 5px;}
-.author-list {min-height: 250px;}
-
-.wp-caption-text {font-style: italic;
-font-size: .8em;
-text-align: center;}
-
-.wp-caption .alignright {float: right;}
-.wp-caption .alignleft {float: left;}
 
 
 /*   ============   HEADER   ============   */
@@ -426,45 +336,6 @@ ul h4 {
   display: block;
 }
 
-/* tables sorter */
-table.tablesorter {
-	font-family:arial;
-	background-color: #CDCDCD;
-	margin:10px 0pt 15px;
-	font-size: 8pt;
-	width: 940px;
-	text-align: left;
-}
-table.tablesorter thead tr th, table.tablesorter tfoot tr th {
-	background-color: #e6EEEE;
-	border: 1px solid #FFF;
-	font-size: 8pt;
-	padding: 4px;
-}
-table.tablesorter thead tr .header {
-	background-image: url(bg.gif);
-	background-repeat: no-repeat;
-	background-position: center right;
-	cursor: pointer;
-}
-table.tablesorter tbody td {
-	color: #3D3D3D;
-	padding: 4px;
-	background-color: #FFF;
-	vertical-align: top;
-}
-table.tablesorter tbody tr.odd td {
-	background-color:#F0F0F6;
-}
-table.tablesorter thead tr .headerSortUp {
-	background-image: url(asc.gif);
-}
-table.tablesorter thead tr .headerSortDown {
-	background-image: url(desc.gif);
-}
-table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-background-color: #8dbdd8;
-}
 
 
 
