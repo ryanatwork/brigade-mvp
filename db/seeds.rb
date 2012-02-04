@@ -3,6 +3,11 @@ if Rails.env!='production'
 
 require 'faker'
 
+  User.create(
+    :email => "email@test.com",
+    :password => "123456"
+  )
+
   #Adding Apps
   puts "Adding 50 apps"
   50.times {
