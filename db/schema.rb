@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205002403) do
+ActiveRecord::Schema.define(:version => 20120205005151) do
 
   create_table "apps", :force => true do |t|
     t.string   "name"
@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(:version => 20120205002403) do
     t.string   "github_url"
     t.string   "demo_url"
     t.string   "deployments"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "cfa_project_url"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
