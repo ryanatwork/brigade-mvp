@@ -49,7 +49,7 @@ describe AppsController do
  describe '#update' do
    before do
      @apps = Factory(:app)
-     put :update, :id => @apps.id, :application => { :name => "Adopta Hydrant" }
+     put :update, :id => @apps.id, :app => { :name => "Adopta Hydrant" }
    end
 
    it "should update the App name" do
