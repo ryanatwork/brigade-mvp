@@ -14,10 +14,13 @@
   = @app.instructions
 %p
   %b Github url:
-  = @app.github_url
+  = link_to @app.github_url, @app.github_url, :target => "_blank"
 %p
   %b Demo url:
-  = @app.demo_url
+  = link_to @app.demo_url, @app.demo_url, :target => "_blank"
+%p
+  %b Code for America project:
+  = link_to @app.cfa_project_url, @app.cfa_project_url, :target => "_blank"
 %p
   %b Deployments:
   = @app.deployments
