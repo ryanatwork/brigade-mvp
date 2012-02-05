@@ -1,4 +1,4 @@
-= form_for @app do |f|
+= form_for @app, {:class => "form-horizontal"} do |f|
   -if @app.errors.any?
     #error_explanation
       %h2= "#{pluralize(@app.errors.count, "error")} prohibited this app from being saved:"
@@ -6,29 +6,37 @@
         - @app.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
+  .control-group
+    = f.label :name, {:class => "control-label"}
+    .controls
+      = f.text_field :name
+  .control-group
     = f.label :tag_line
-    = f.text_field :tag_line
-  .field
+    .controls
+      = f.text_field :tag_line
+  .control-group
     = f.label :description
-    = f.text_area :description
-  .field
+    .controls
+      = f.text_area :description, {:class => "span8"}
+  .control-group
     = f.label :instructions
-    = f.text_area :instructions
-  .field
+    .controls
+      = f.text_area :instructions, {:class => "span8"}
+  .control-group
     = f.label :github_url
-    = f.text_field :github_url
-  .field
+    .controls
+      = f.text_field :github_url
+  .control-group
     = f.label :demo_url
-    = f.text_field :demo_url
-  .field
+    .controls
+      = f.text_field :demo_url
+  .control-group
     = f.label :cfa_project_url
-    = f.text_field :cfa_project_url
-  .field
+    .controls
+      = f.text_field :cfa_project_url
+  .control-group
     = f.label :deployments
-    = f.text_field :deployments
-  .actions
-    = f.submit 'Save'
+    .controls
+      = f.text_field :deployments
+  .form-actions
+    = f.submit 'Save', {:class => "btn-primary"}
