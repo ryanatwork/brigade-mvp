@@ -10,7 +10,6 @@ config/settings.yml
 /.emacs.desktop
 /.emacs.desktop.lock
 Desktop.ini
-Gemfile.lock
 Icon?
 InstalledFiles
 Session.vim
